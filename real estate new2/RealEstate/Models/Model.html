@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Price Prediction</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="page">
+        <p>Please enter the details of the property below to get an estimated price prediction.</p>
+        <form id="prediction-form">
+            <label for="bed">Bedrooms:</label>
+            <input type="number" id="bed" name="bed" step="any" required><br><br>
+
+            <label for="bath">Bathrooms:</label>
+            <input type="number" id="bath" name="bath" step="any" required><br><br>
+
+            <label for="acre_lot">Acre Lot:</label>
+            <input type="number" id="acre_lot" name="acre_lot" step="any" required><br><br>
+
+            <label for="state">State:</label>
+            <select id="state" name="state" required>
+                <option value="">--Select State--</option>
+                <!-- State options here -->
+                <option value="Puerto Rico">Puerto Rico</option>
+                <option value="Virgin Islands">Virgin Islands</option>
+                <option value="Massachusetts">Massachusetts</option>
+                <option value="Connecticut">Connecticut</option>
+                <option value="New Hampshire">New Hampshire</option>
+                <option value="Vermont">Vermont</option>
+                <option value="New Jersey">New Jersey</option>
+                <option value="New York">New York</option>
+                <option value="South Carolina">South Carolina</option>
+                <option value="Tennessee">Tennessee</option>
+                <option value="Rhode Island">Rhode Island</option>
+                <option value="Virginia">Virginia</option>
+                <option value="Wyoming">Wyoming</option>
+                <option value="Maine">Maine</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Pennsylvania">Pennsylvania</option>
+                <option value="West Virginia">West Virginia</option>
+                <option value="Delaware">Delaware</option>
+                <option value="Louisiana">Louisiana</option>
+                <option value="Ohio">Ohio</option>
+                <option value="California">California</option>
+                <option value="Colorado">Colorado</option>
+                <option value="Maryland">Maryland</option>
+                <option value="Missouri">Missouri</option>
+                <option value="District of Columbia">District of Columbia</option>
+                <option value="Wisconsin">Wisconsin</option>
+                <option value="North Carolina">North Carolina</option>
+                <option value="Kentucky">Kentucky</option>
+                <option value="Michigan">Michigan</option>
+                <option value="Mississippi">Mississippi</option>
+                <option value="Florida">Florida</option>
+                <option value="Texas">Texas</option>
+                <option value="Arkansas">Arkansas</option>
+                <option value="Idaho">Idaho</option>
+                <option value="Indiana">Indiana</option>
+                <option value="Illinois">Illinois</option>
+                <option value="New Mexico">New Mexico</option>
+                <option value="Iowa">Iowa</option>
+                <option value="Minnesota">Minnesota</option>
+                <option value="South Dakota">South Dakota</option>
+                <option value="Nebraska">Nebraska</option>
+                <option value="North Dakota">North Dakota</option>
+                <option value="Montana">Montana</option>
+                <option value="Oklahoma">Oklahoma</option>
+                <option value="Kansas">Kansas</option>
+                <option value="Oregon">Oregon</option>
+                <option value="Utah">Utah</option>
+                <option value="Nevada">Nevada</option>
+                <option value="Washington">Washington</option>
+                <option value="Arizona">Arizona</option>
+                <option value="Hawaii">Hawaii</option>
+                <option value="Alaska">Alaska</option>
+            </select><br><br>
+
+            <label for="house_size">House Size (sq ft):</label>
+            <input type="number" id="house_size" name="house_size" step="any" required><br><br>
+
+            <button type="submit">Predict Price</button>
+        </form>
+
+        <h2 id="prediction">Your House Price: <span id="predicted-price">N/A</span>$</h2dddd>
+    </div>
+</body>
+
+</html>
